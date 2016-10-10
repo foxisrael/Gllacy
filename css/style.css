@@ -55,6 +55,7 @@ p {
     text-align: center;
     width: 1150px;
     padding: 0 30px;
+    position: relative;
 }
 
 header {
@@ -358,7 +359,7 @@ nav li {
     border-radius: 16px;
     margin-bottom: 40px;
     background: url("../img/pattern-vafli.jpg") repeat;
-    background-image: cover;
+    background-size: cover;
 }
 
 .about p {

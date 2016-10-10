@@ -1,129 +1,473 @@
 html, body, a {
-  margin: 0 auto;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: white;
-  background: #849d8f;
-  text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    text-decoration: none;
+    background: #849d8f;
 }
 
-h1 {
-
-}
+h1 {}
 
 h2 {
+    font-size: 35px;
+    line-height: 41px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
 
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #323232;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
 p {
-
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  margin: 0 auto;
-  text-align: center;
-  width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    width: 1150px;
+    padding: 0 30px;
+    background: #849d8f;
 }
 
-.logo{
-  display: block;
-  float: left;
-  background: url("../img/logo-gllacy.png") no-repeat;
-  width: 154px;
-  height: 64px;
-  margin-right: 30px;
+header {
+    height: 125px;
+}
+
+.logo {
+    display: block;
+    float: left;
+    background: url("../img/logo-gllacy.png") no-repeat;
+    width: 154px;
+    height: 64px;
+    margin-right: 30px;
 }
 
 nav {
-  position: relative;
-  top: 20px;
+    position: relative;
+    top: 20px;
 }
 
-nav li{
-  display: inline-block;
+nav li {
+    display: inline-block;
+    float: left;
+    margin-right: 25px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.users-help {
+    position: relative;
+    top: 15px;
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.us-btn {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    height: 12px;
+    padding: 8px 16px 12px;
+    text-align: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.busket, .login {
+    padding-left: 45px;
+}
+
+.busket::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    background: url("../img/icon-busket.png") no-repeat;
+    opacity: 1;
+    width: 21px;
+    height: 20px;
+    z-index: 1;
+}
+
+.login::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    background: url("../img/icon-login.png") no-repeat;
+    opacity: 1;
+    width: 21px;
+    height: 19px;
+    z-index: 1;
+}
+
+.search::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: url("../img/icon-search.png") no-repeat;
+    opacity: 1;
+    width: 17px;
+    height: 17px;
+    z-index: 1;
+}
+
+.users-help p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.users-help span {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.sales {
+    height: 230px;
+    margin-bottom: 30px;
+}
+
+.raspberries-sale {
+    float: left;
+    width: 520px;
+    height: 190px;
+    padding: 20px;
+}
+
+.chocolate-sale {
+    float: right;
+    width: 520px;
+    height: 190px;
+    padding: 20px;
+}
+
+.raspberries-sale {
+    background: url("../img/raspberries.jpg");
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.chocolate-sale {
+    background: url("../img/chocolate.jpg");
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.btn {}
+
+.icecreams-items {
+    height: 325px;
+    margin-bottom: 20px;
+}
+
+.icecream-item1 {
+    display: block;
+    float: left;
+    margin-right: 35px;
+    position: relative;
+    width: 266px;
+    height: 266px;
+    border-radius: 133px;
+    background: url("../img/rounc-ic-1.png") no-repeat;
+}
+
+.icecream-item2 {
+    display: block;
+    float: left;
+    margin-right: 25px;
+    position: relative;
+    width: 266px;
+    height: 266px;
+    border-radius: 133px;
+    background: url("../img/rounc-ic-2.png") no-repeat;
+}
+
+.icecream-item3 {
+    display: block;
+    float: left;
+    margin-right: 25px;
+    position: relative;
+    width: 266px;
+    height: 266px;
+    border-radius: 133px;
+    background: url("../img/rounc-ic-3.png") no-repeat;
+}
+
+.icecream-item4 {
+    display: block;
+    float: left;
+    position: relative;
+    width: 266px;
+    height: 266px;
+    border-radius: 133px;
+    background: url("../img/rounc-ic-4.png") no-repeat;
+}
+
+.icecream-item1 b, .icecream-item2 b, .icecream-item3 b, .icecream-item4 b {
+    display: block;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    bottom: 0;
+    font-size: 45px;
+    line-height: 45px;
+    text-shadow: 1px 0 3px rgba(49, 50, 53, 0.5);
+}
+
+.icecream-item1 p, .icecream-item2 p, .icecream-item3 p, .icecream-item4 p {
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    top: 220px;
+    left: 1px;
+}
+
+.rubl {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: 1px;
+    background: url("../img/icon-rubl.png") no-repeat;
+    text-shadow: 1px 0 3px rgba(49, 50, 53, 0.5);
+    width: 31px;
+    height: 36px;
+}
+
+.hitt {
+    width: 60px;
+    height: 60px;
+    background: url("../img/hitt.jpg") no-repeat;
+    border-radius: 30px;
+}
+
+.about {
+    width: 1110px;
+    height: 265px;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    background: url("../img/pattern-vafli.jpg") repeat;
+    background-image: cover;
+}
+
+.about p {
+    display: block;
+    position: relative;
+    top: 17px;
+    float: left;
+    width: 475px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #323232;
+}
+
+.about-icecream, .about-cow, .about-list, .about-temperature {
+    float: left;
+    width: 540px;
+    margin-right: 25px;
+}
+
+.about-cow, .about-temperature {
+    float: right;
+    margin-right: 0px;
+}
+
+.about-icecream, .about-cow {
+    margin-bottom: 25px;
+}
+
+.about-icecream-icon {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 48px;
+    height: 49px;
+    background: url("../img/icon-icecream.png") no-repeat;
+}
+
+.about-cow-icon {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 48px;
+    height: 49px;
+    background: url("../img/icon-cow.png") no-repeat;
+}
+
+.about-list-icon {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 48px;
+    height: 49px;
+    background: url("../img/icon-list.png") no-repeat;
+}
+
+.about-temperature-icon {
+    display: block;
+    float: left;
+    width: 48px;
+    height: 49px;
+    background: url("../img/icon-temperature.png") no-repeat;
+}
+
+.blog-mail {
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.blog {
+    float: left;
+    margin-right: 25px;
+    width: 535px;
+    height: 180px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff url("../img/bg-blog.jpg") no-repeat;
+    background-position: center right;
+    border-radius: 16px;
+}
+
+.blog h3 {
+    text-decoration: underline;
+}
+
+.blog p, .mail-bg p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: #323232;
+}
+
+.mail {
+    float: right;
+    width: 535px;
+    height: 210px;
+    margin-bottom: 20px;
+    background: #fff url("../img/pattern-mail.jpg") repeat;
+    border-radius: 16px;
+    padding: 5px;
+}
+
+.mail-bg {
+    border-radius: 16px;
+    background: #f8f7f4;
+    width: 495px;
+    height: 140px;
+    padding: 35px 20px;
+}
+
+.contacts {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 430px;
+    background: url("../img/map-gllacy.jpg") no-repeat;
+}
+
+.addres {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    border-radius: 16px;
+    width: 270px;
+    height: 240px;
+    padding: 35px 25px 30px 25px;
+    background: #fff;
+}
+
+.addres p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.addres span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+footer{
+  height: 40px;
+  padding: 35px 0 30px;
+}
+
+.social{
   float: left;
-  margin-right: 25px;
-  text-align: left;
-  font-weight: bold;
+  margin-right: 215px;
 }
 
-.users-help{
-  position: relative;
-  top: 15px;
-  right: 50px;
-  float: right;
-  text-align: right;
-  font-size: 14px;
-  line-height: 16px;
+.social-btn {
+  display: inline-block;
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
-.us-btn{
-  display: block;
-  float: right;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  height: 12px;
-  padding: 8px 16px 12px;
-  text-align: center;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.2);
-  position: relative;
+.tw {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  background: url("../img/icon-tw.png") no-repeat;
+  background-position: center;
 }
 
-.busket,
-.login{
-  padding-left: 45px;
+.inst {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  background: url("../img/icon-inst.png") no-repeat;
+  background-position: center;
 }
 
-.busket::before{
-  display: block;
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 15px;
-  background: url("../img/icon-busket.png") no-repeat;
-  opacity: 1;
-  width: 21px;
-  height: 20px;
-  z-index: 1;
+.fb {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  background: url("../img/icon-fb.png") no-repeat;
+  background-position: center;
 }
 
-.login::before{
-  display: block;
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 15px;
-  background: url("../img/icon-login.png") no-repeat;
-  opacity: 1;
-  width: 21px;
-  height: 19px;
-  z-index: 1;
-}
-
-.search::before{
-  display: block;
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: url("../img/icon-search.png") no-repeat;
-  opacity: 1;
-  width: 17px;
-  height: 17px;
-  z-index: 1;
-}
-
-.users-help p{
-  text-align: right;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.users-help span{
-  font-size: 22px;
-  line-height: 24px;
+.vk {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  background: url("../img/icon-vk.png") no-repeat;
+  background-position: center;
 }

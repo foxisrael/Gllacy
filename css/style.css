@@ -1,4 +1,4 @@
-html, body, a {
+html, body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -6,17 +6,28 @@ html, body, a {
     line-height: 18px;
     color: white;
     text-decoration: none;
-    background: #849d8f;
+    background: #849d8f url("../img/bg-light1.png") no-repeat;
+    background-position: top center;
 }
 
-h1 {}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 61px;
+    text-align: center;
+    font-weight: bold;
+}
 
 h2 {
     font-size: 35px;
     line-height: 41px;
     text-align: left;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     padding: 0;
 }
 
@@ -44,7 +55,6 @@ p {
     text-align: center;
     width: 1150px;
     padding: 0 30px;
-    background: #849d8f;
 }
 
 header {
@@ -150,9 +160,52 @@ nav li {
     line-height: 24px;
 }
 
+.slider {
+    height: 584px;
+    text-align: center;
+    margin: -60px auto 0;
+    background: url("../img/icecream-1.png") no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.slider h1 {
+    position: relative;
+    top: 240px;
+}
+
+.slider-buttons {
+    position: relative;
+    top: 465px;
+    left: 5px;
+}
+
+.slider-buttons ul {
+    position: relative;
+    top: 13px;
+    text-align: left;
+    padding: 0;
+}
+
+.slider-buttons li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.slider-buttons a {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #fff;
+    border-radius: 9px;
+}
+
 .sales {
     height: 230px;
-    margin-bottom: 30px;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    z-index: 2;
+    text-align: left;
 }
 
 .raspberries-sale {
@@ -184,54 +237,78 @@ nav li {
 .btn {}
 
 .icecreams-items {
+    width: 100%;
     height: 325px;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
-.icecream-item1 {
-    display: block;
-    float: left;
-    margin-right: 35px;
-    position: relative;
-    width: 266px;
-    height: 266px;
-    border-radius: 133px;
+.icecream-item {
+  display: block;
+  float: left;
+  margin-right: 27px;
+  margin-bottom: 80px;
+  position: relative;
+  width: 266px;
+  height: 266px;
+  border-radius: 133px;
+}
+
+.icecream-item:nth-child(4n){
+    margin-right: 0px;
+}
+
+.item1 {
     background: url("../img/rounc-ic-1.png") no-repeat;
 }
 
-.icecream-item2 {
-    display: block;
-    float: left;
-    margin-right: 25px;
-    position: relative;
-    width: 266px;
-    height: 266px;
-    border-radius: 133px;
+.item2 {
     background: url("../img/rounc-ic-2.png") no-repeat;
 }
 
-.icecream-item3 {
-    display: block;
-    float: left;
-    margin-right: 25px;
-    position: relative;
-    width: 266px;
-    height: 266px;
-    border-radius: 133px;
+.item3 {
     background: url("../img/rounc-ic-3.png") no-repeat;
 }
 
-.icecream-item4 {
-    display: block;
-    float: left;
-    position: relative;
-    width: 266px;
-    height: 266px;
-    border-radius: 133px;
+.item4 {
     background: url("../img/rounc-ic-4.png") no-repeat;
 }
 
-.icecream-item1 b, .icecream-item2 b, .icecream-item3 b, .icecream-item4 b {
+.item5 {
+    background: url("../img/rounc-ic-5.png") no-repeat;
+}
+
+.item6 {
+    background: url("../img/rounc-ic-6.png") no-repeat;
+}
+
+.item7 {
+    background: url("../img/rounc-ic-7.png") no-repeat;
+}
+
+.item8 {
+    background: url("../img/rounc-ic-8.png") no-repeat;
+}
+
+.item9 {
+    background: url("../img/rounc-ic-9.png") no-repeat;
+}
+
+.item10 {
+    background: url("../img/rounc-ic-10.png") no-repeat;
+}
+
+.item11 {
+    background: url("../img/rounc-ic-11.png") no-repeat;
+}
+
+.item12 {
+    background: url("../img/rounc-ic-12.png") no-repeat;
+}
+
+.item1 b, .item2 b, .item3 b, .item4 b,
+.item5 b, .item6 b, .item7 b, .item8 b,
+.item9 b, .item10 b, .item11 b, .item12 b {
     display: block;
     position: absolute;
     top: 210px;
@@ -242,7 +319,9 @@ nav li {
     text-shadow: 1px 0 3px rgba(49, 50, 53, 0.5);
 }
 
-.icecream-item1 p, .icecream-item2 p, .icecream-item3 p, .icecream-item4 p {
+.item1 a, .item2 a, .item3 a, .item4 a,
+.item5 a, .item6 a, .item7 a, .item8 a,
+.item9 a, .item10 a, .item11 a, .item12 a {
     display: inline-block;
     position: relative;
     font-size: 16px;
@@ -277,7 +356,7 @@ nav li {
     height: 265px;
     padding: 20px;
     border-radius: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background: url("../img/pattern-vafli.jpg") repeat;
     background-image: cover;
 }
@@ -338,6 +417,7 @@ nav li {
 .about-temperature-icon {
     display: block;
     float: left;
+    margin-right: 10px;
     width: 48px;
     height: 49px;
     background: url("../img/icon-temperature.png") no-repeat;
@@ -345,16 +425,14 @@ nav li {
 
 .blog-mail {
     height: 220px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .blog {
     float: left;
-    margin-right: 25px;
-    width: 535px;
+    width: 520px;
     height: 180px;
     padding: 20px;
-    margin-bottom: 20px;
     background: #fff url("../img/bg-blog.jpg") no-repeat;
     background-position: center right;
     border-radius: 16px;
@@ -372,10 +450,10 @@ nav li {
 }
 
 .mail {
+    box-sizing: border-box;
     float: right;
-    width: 535px;
-    height: 210px;
-    margin-bottom: 20px;
+    width: 560px;
+    height: 220px;
     background: #fff url("../img/pattern-mail.jpg") repeat;
     border-radius: 16px;
     padding: 5px;
@@ -384,7 +462,7 @@ nav li {
 .mail-bg {
     border-radius: 16px;
     background: #f8f7f4;
-    width: 495px;
+    width: 510px;
     height: 140px;
     padding: 35px 20px;
 }
@@ -392,7 +470,6 @@ nav li {
 .contacts {
     margin: 0 auto;
     position: relative;
-    width: 1200px;
     height: 430px;
     background: url("../img/map-gllacy.jpg") no-repeat;
 }
@@ -400,7 +477,7 @@ nav li {
 .addres {
     position: absolute;
     top: 60px;
-    right: 50px;
+    right: 0;
     border-radius: 16px;
     width: 270px;
     height: 240px;
@@ -421,53 +498,100 @@ nav li {
     line-height: 24px;
 }
 
-footer{
-  height: 40px;
-  padding: 35px 0 30px;
+footer {
+    height: 40px;
+    padding: 35px 0 30px;
 }
 
-.social{
-  float: left;
-  margin-right: 215px;
+.social {
+    float: left;
+    margin-right: 215px;
 }
 
 .social-btn {
-  display: inline-block;
-  margin-right: 10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 18px;
-  border: 3px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .tw {
-  width: 32px;
-  height: 32px;
-  opacity: 0.8;
-  background: url("../img/icon-tw.png") no-repeat;
-  background-position: center;
+    width: 31px;
+    height: 31px;
+    opacity: 0.8;
+    background: url("../img/icon-tw.png") no-repeat;
+    background-position: center;
 }
 
 .inst {
-  width: 32px;
-  height: 32px;
-  opacity: 0.8;
-  background: url("../img/icon-inst.png") no-repeat;
-  background-position: center;
+    width: 31px;
+    height: 31px;
+    opacity: 0.8;
+    background: url("../img/icon-inst.png") no-repeat;
+    background-position: center;
 }
 
 .fb {
-  width: 32px;
-  height: 32px;
-  opacity: 0.8;
-  background: url("../img/icon-fb.png") no-repeat;
-  background-position: center;
+    width: 31px;
+    height: 31px;
+    opacity: 0.8;
+    background: url("../img/icon-fb.png") no-repeat;
+    background-position: center;
 }
 
 .vk {
-  width: 32px;
-  height: 32px;
-  opacity: 0.8;
-  background: url("../img/icon-vk.png") no-repeat;
-  background-position: center;
+    width: 31px;
+    height: 31px;
+    opacity: 0.8;
+    background: url("../img/icon-vk.png") no-repeat;
+    background-position: center;
+}
+
+.about-services {
+    float: left;
+    text-align: left;
+    position: relative;
+}
+
+.about-services:before{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  background: url("../img/icon-heart.png") no-repeat;
+  width: 15px;
+  height: 13px;
+}
+
+.about-services a {
+    font-size: 13px;
+    line-height: 18px;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.copyright {
+  position: relative;
+  top: -10px;
+  float: right;
+}
+
+.copyright p {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.copyright a {
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: underline;
+}
+
+.copyright-logo {
+    width: 108px;
+    height: 38px;
+    background: url("../img/logo-htmlacademy.png")
 }

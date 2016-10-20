@@ -10,6 +10,10 @@ html, body {
     background-position: top center;
 }
 
+.body-catalog{
+  background: #849d8f;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -238,24 +242,25 @@ nav li {
 .btn {}
 
 .icecreams-items {
+    display: inline-block;
+    vertical-align: top;
     width: 100%;
-    height: 325px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .icecream-item {
-  display: block;
-  float: left;
-  margin-right: 27px;
-  margin-bottom: 80px;
-  position: relative;
-  width: 266px;
-  height: 266px;
-  border-radius: 133px;
+    display: block;
+    float: left;
+    margin-right: 27px;
+    margin-bottom: 80px;
+    position: relative;
+    width: 266px;
+    height: 266px;
+    border-radius: 133px;
 }
 
-.icecream-item:nth-child(4n){
+.icecream-item:nth-child(4n) {
     margin-right: 0px;
 }
 
@@ -307,9 +312,7 @@ nav li {
     background: url("../img/rounc-ic-12.png") no-repeat;
 }
 
-.item1 b, .item2 b, .item3 b, .item4 b,
-.item5 b, .item6 b, .item7 b, .item8 b,
-.item9 b, .item10 b, .item11 b, .item12 b {
+.item1 b, .item2 b, .item3 b, .item4 b, .item5 b, .item6 b, .item7 b, .item8 b, .item9 b, .item10 b, .item11 b, .item12 b {
     display: block;
     position: absolute;
     top: 210px;
@@ -320,9 +323,7 @@ nav li {
     text-shadow: 1px 0 3px rgba(49, 50, 53, 0.5);
 }
 
-.item1 a, .item2 a, .item3 a, .item4 a,
-.item5 a, .item6 a, .item7 a, .item8 a,
-.item9 a, .item10 a, .item11 a, .item12 a {
+.item1 a, .item2 a, .item3 a, .item4 a, .item5 a, .item6 a, .item7 a, .item8 a, .item9 a, .item10 a, .item11 a, .item12 a {
     display: inline-block;
     position: relative;
     font-size: 16px;
@@ -350,6 +351,14 @@ nav li {
     height: 60px;
     background: url("../img/hitt.jpg") no-repeat;
     border-radius: 30px;
+}
+
+.hitt-off{
+  width: 60px;
+  height: 60px;
+  background: url("../img/hitt.jpg") no-repeat;
+  border-radius: 30px;
+  opacity: 0;
 }
 
 .about {
@@ -468,6 +477,28 @@ nav li {
     padding: 35px 20px;
 }
 
+.breadcrumbs{
+  margin-top: -35px;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs a:first-child{
+  margin-left: 0;
+}
+
+.breadcrumbs a, .breadcrumbs span {
+    display: inline-block;
+    margin: 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    text-decoration: none;
+}
+
 .contacts {
     margin: 0 auto;
     position: relative;
@@ -556,15 +587,15 @@ footer {
     position: relative;
 }
 
-.about-services:before{
-  display: block;
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: -20px;
-  background: url("../img/icon-heart.png") no-repeat;
-  width: 15px;
-  height: 13px;
+.about-services:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    background: url("../img/icon-heart.png") no-repeat;
+    width: 15px;
+    height: 13px;
 }
 
 .about-services a {
@@ -575,9 +606,9 @@ footer {
 }
 
 .copyright {
-  position: relative;
-  top: -10px;
-  float: right;
+    position: relative;
+    top: -10px;
+    float: right;
 }
 
 .copyright p {
@@ -595,4 +626,303 @@ footer {
     width: 108px;
     height: 38px;
     background: url("../img/logo-htmlacademy.png")
+}
+
+
+/* FORMS */
+
+form {
+  text-align: left;
+}
+
+form h2{
+  margin-bottom: 25px;
+}
+
+form p {
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.range-filter,
+.catalog-popular,
+.catalog-fatness,
+.range-filter{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 15px;
+}
+
+.catalog-popular {
+    width: 195px;
+    margin-right: 15px;
+}
+
+.catalog-popular p,
+.catalog-fatness p,
+.catalog-fillers p,
+.range-filter p{
+  margin-left: 16px;
+}
+
+.catalog-popular select {
+    width: 195px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 0px 18px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+}
+
+.range-filter {
+    width: 220px;
+    margin-right: 15px;
+}
+
+.range-controls {
+    height: 36px;
+    position: relative;
+    padding: 0px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.scale {
+    position: absolute;
+    margin-top: 16px;
+    width: 188px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.bar {
+    position: absolute;
+    height: 4px;
+    margin-left: 25px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.toggle {
+    display: block;
+    border: 8px solid #fff;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    top: 8px;
+    left: 20px;
+}
+
+.min-toggle {
+    position: absolute;
+    left: 35px;
+}
+
+.max-toggle {
+    position: absolute;
+    left: 145px;
+}
+
+.min-price,
+.max-price{
+  border: none;
+  width: 50px;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.fatness-items{
+  width: 415px;
+  height: 20px;
+  padding: 8px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-fillers{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.catalog-fillers label{
+  margin-right: 20px;
+}
+
+.fillers-items{
+  display: inline-block;
+  vertical-align: top;
+  width: 700px;
+  height: 20px;
+  padding: 8px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-fatness input[type="radio"],
+.catalog-fillers input[type="checkbox"] {
+    display: none;
+}
+
+.catalog-fatness input[type="radio"]+label,
+.catalog-fillers input[type="checkbox"]+label {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+
+.catalog-fatness input[type="radio"]+label,
+.catalog-fillers input[type="checkbox"]+label {
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.catalog-fillers input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-checkbox.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.catalog-fillers input[type="checkbox"]:checked+label::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-checkbox-ok.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.catalog-fillers input[type="checkbox"]+label:hover::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-checkbox-hover.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.catalog-fillers input[type="checkbox"]+label:active::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-checkbox-ok-hover.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.catalog-fatness input[type="radio"]+label::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-radio.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.catalog-fatness input[type="radio"]:checked+label::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-radio-ok.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.catalog-fatness input[type="radio"]+label:hover::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-radio-hover.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.catalog-fatness input[type="radio"]+label:active::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-radio-ok.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.catalog-fatness input[type="radio"]+label:visited::before {
+    content: "";
+    display: block;
+    left: -30px;
+    top: -1px;
+    position: absolute;
+    background-image: url("../img/icon-radio-ok-hover.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+form button{
+  display: inline-block;
+  border: 2px solid #fff;
+  width: 140px;
+  height: 34px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.paginator{
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+}
+
+.paginator li{
+  display: inline-block;
+}
+
+.paginator a{
+  display: inline-block;
+  width: 26px;
+  height: 25px;
+  color: #fff;
+  margin-right: 2px;
 }
